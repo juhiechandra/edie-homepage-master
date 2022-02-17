@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../edie-homepage-master/CSS/style.css" />
 </head>
 
 <body>
@@ -85,13 +85,87 @@
         </section>
         <section class="works">
             <h2 class="works__headline">Good design means good business</h2>
-            <div class="work__1">
+            <div class="work-card">
                 <img src="../edie-homepage-master/images/smarthome.jpg" alt="smarthome" />
-                <p class="work__1">Full stack application</p>
+                <p id="works">Full stack application</p>
                 <h3>Smart home dashboard</h3>
+            </div>
+            <div class="work-card">
+                <img src="../edie-homepage-master/images/onboard.png" alt="onboard" />
+                <p id="works">UX/UI design</p>
+                <h3>Onboard application</h3>
+            </div>
+            <div class="work-card">
+                <img src="../edie-homepage-master/images/booking.png" alt="booking" />
+                <p id="works">Mobile application</p>
+                <h3>Booking system</h3>
+            </div>
+            <div class="work-card">
+                <img src="../edie-homepage-master/images/juice-product.png" alt="juice-product" />
+                <p id="works">Front End application</p>
+                <h3>Juice product homepage</h3>
+            </div>
+            <a href="#">See More</a>
+        </section>
+        <section class="team">
+            <div class="team__info">
+                <p class="heading">Meet the team</p>
+                <h2>We are chilled and a laidback team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <figure>
+                <img src="../edie-homepage-master/images/person1.png" alt="person1" />
+                <img src="../edie-homepage-master/images/person2.png" alt="person2" />
+                <img src="../edie-homepage-master/images/person3.png" alt="person3" />
+            </figure>
+        </section>
+        <section class="quote">
+            <h3 class="quote">
+                “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+            </h3>
+            <div class="quoter">
+                <img src="../edie-homepage-master/images/person4.png" alt="person4" />
+                <p class="name">Carlos Tran</p>
+                <p>The Decorate Gatsby</p>
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer__menu">
+            <nav class="menu">
+                <ul class="navigation_list">
+                    <li class="navigation_item">
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#Services">Services</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#OurWorks">Our Works</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#Clients">Clients</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__contact">
+            <h1>Edie</h1>
+            <img src="" alt="instagram" />
+            <img src="" alt="Linkedin" />
+            <img src="" alt="Twitter" />
+        </div>
+        <form class="email">
+            <label for="email">Want us to contact you?</label>
+            <div class="input-area">
+                <input required type="email" name="email" placeholder="Email" />
+                <button type="submit">Join</button>
+            </div>
+        </form>
+    </footer>
 </body>
 
 </html>
