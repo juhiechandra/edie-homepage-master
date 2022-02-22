@@ -1,31 +1,166 @@
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot);
-    /* For IE6-8 */
-    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+    font-size: 10px;
+    --grey: #100e1d;
+    --grey-dark1: #333333;
+    --grey-dark2: #4f4f4f;
+    --grey-dark3: #828282;
+    --grer-dark4: #bdbdbd;
+    --grey-light1: #f2f2f2;
+    --grey-light2: #a9a9a9;
+    --grey-light3: #e0e0e0;
+    --white: #ffffff;
+    --red: rgba(235, 87, 87, 0.7);
+    --green: rgba(39, 174, 96, 0.7);
+    --blue: #57b0e2;
+    --sans-serif1: "Poppins", Arial, Helvetica, sans-serif;
+    --sans-serif2: "Montserrat", Arial, Helvetica, sans-serif;
+    --brand: "Heebo", Arial, Helvetica, sans-serif;
 }
 
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CSS FOR SECTION 1 */
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--grey-dark1);
+    text-decoration: none;
+}
+
+input {
+    position: relative;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.eddie {
     font-size: 24px;
-    /* Preferred icon size */
+    font-family: var(--brand);
+}
+
+body {
+    color: var(--grey-dark1);
+    font-family: var(--sans-serif1);
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+    position: sticky;
+    top: 0%;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+.menu {
+    width: 60%;
+}
+
+.navigation_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_item {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navigation_item a {
+    transition: opacity 0.4s ease-in-out;
+}
+
+.navigation_item a:hover {
+    opacity: 0.8;
+}
+
+
+/* CSS FOR SECTION 2 */
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.Hero {
+    margin-bottom: 100px;
+}
+
+.Hero__ask {
+    /* Unhappy with your website? */
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 27px; */
+    /* identical to box height */
+    color: #2d9cdb;
+}
+
+.headline__1 {
+    /* We create beautiful and fast web services */
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* Gray 1 */
+    color: #333333;
+}
+
+.Hero .Hero__ask,
+.headline__1,
+.info,
+.email,
+.form,
+.input-area {
+    margin-left: 15%;
+    max-width: 420px;
+}
+
+.info {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* Gray 2 */
+    color: #4f4f4f;
+}
+
+label {
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.email {
     display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-    /* Support for IE. */
-    font-feature-settings: 'liga';
 }
