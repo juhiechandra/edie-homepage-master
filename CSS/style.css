@@ -168,12 +168,75 @@ form {
 
 /* CSS FOR SECTION 3 */
 
-.Hero_content {
-    margin: 80px;
-    width: 85%;
+.services__headline {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 38px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* Gray 1 */
+    color: #333333;
 }
 
-.flex_cards {
-    margin-top: 20px;
+div .flex_card {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 420px;
+}
+
+.card__heading {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.card__info {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.card__cta {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--grey-light3);
+}
+
+.flex_card:hover,
+.flex_card:focus {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 10px 10px 20px var(--grey-light2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flex_card:hover>.card__cta,
+.flex_card:focus>.card__cta {
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+/* CSS FOR SECTION 4 */
+
+.work__headline {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 38px;
+    width: 400px;
     margin-bottom: 20px;
+    margin-top: 150px;
+    /* Gray 1 */
+    color: #333333;
 }
