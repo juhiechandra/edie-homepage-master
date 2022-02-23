@@ -164,3 +164,16 @@ form {
 .email {
     display: inline-block;
 }
+
+
+/* CSS FOR SECTION 3 */
+
+.Hero_content {
+    margin: 80px;
+    width: 85%;
+}
+
+.flex_cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
