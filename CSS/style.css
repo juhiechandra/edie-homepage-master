@@ -233,10 +233,103 @@ div .flex_card {
 .work__headline {
     font-family: Poppins;
     font-weight: 500;
-    font-size: 38px;
-    width: 400px;
+    font-size: 42px;
+    width: 480px;
     margin-bottom: 20px;
     margin-top: 150px;
     /* Gray 1 */
     color: #333333;
+}
+
+.work__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-card {
+    max-width: 50%;
+}
+
+.work-card:nth-child(odd) {
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.work-card:nth-child(even) {
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.work-card img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.work-card p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #828282;
+}
+
+.work-card h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    /* Gray 1 */
+    color: #333333;
+}
+
+.work-card:hover,
+.work-card:focus {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px var(--grey-light2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.works a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #2d9cdb;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+/* CSS FRO SECTION 4 */
+
+.team {
+    margin-top: 100px;
+}
+
+.team p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #eb5757;
+}
+
+.team h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    /* Gray 1 */
+    color: #333333;
+}
+
+.people img {
+    border-radius: 24px;
 }
